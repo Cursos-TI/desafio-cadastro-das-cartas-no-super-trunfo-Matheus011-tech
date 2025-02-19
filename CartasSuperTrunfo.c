@@ -9,6 +9,19 @@
 int main() {
     printf("Desafio Cartas Super Trunfo!\n");
     printf("Novo Commit\n");
+    printf("novo commit\n");
+    
+    char Tocantins;
+    char Codigo_da_carta[57];
+    char Nome_da_Cidade[50];
+    int População;
+    float Área_em_km²;
+    float PIB;
+    int Pontos_turisticos;
+
+
+
+
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
