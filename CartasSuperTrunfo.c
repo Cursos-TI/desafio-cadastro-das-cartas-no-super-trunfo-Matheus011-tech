@@ -11,13 +11,21 @@ int main() {
     printf("Novo Commit\n");
     printf("novo commit\n");
     
-    char Tocantins;
-    char Codigo_da_carta[57];
-    char Nome_da_Cidade[50];
+    char Estado;
+    char Código Da Carta[57];
+    char Cidade[50];
     int População;
     float Área_em_km²;
     float PIB;
     int Pontos_turisticos;
+
+    printf("Estado: \n");
+    printf("A01: \n");
+    printf("Palmas: \n");
+    scanf("%s", &Estado);
+
+
+    
 
 
 
