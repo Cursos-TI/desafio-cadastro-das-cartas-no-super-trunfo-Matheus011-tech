@@ -6,27 +6,55 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
+int main(){ 
     printf("Desafio Cartas Super Trunfo!\n");
-    printf("Novo Commit\n");
-    printf("novo commit\n");
+   //printf("Novo Commit\n");
+    //printf("novo commit\n");
     
-    char Estado;
-    char Código Da Carta[57];
-    char Cidade[50];
-    int População;
-    float Área_em_km²;
+    char Estado; 
+    char codigo[32];
+    char Cidade[100];   
+    int Populacao;
+    float Area_em_km;
     float PIB;
     int Pontos_turisticos;
 
     printf("Estado: \n");
-    printf("A01: \n");
-    printf("Palmas: \n");
-    scanf("%s", &Estado);
+    scanf("%s",&Estado);
 
+    printf("codigo: \n");
+    scanf("%s" , &codigo);
 
-    
+    printf("Cidade: \n");
+    scanf("%s" , &Cidade);
 
+    printf("Populacao: \n");
+    scanf("%f" , &Populacao);
+
+    printf("Area_em_km: \n");
+    scanf("%e" , &Area_em_km);
+
+    printf("PIB: \n");
+    scanf("%e" , &PIB);
+
+    printf("Pontos_turisticos: \n");
+    scanf("%d" , &Pontos_turisticos);
+
+    printf("Poder Da Carta ");
+
+    printf("Estado: %s" , Estado);
+
+    printf("codigo: %s", codigo);
+
+    printf("Cidade: %s" , Cidade);
+
+    printf("Populacao: %f" , Populacao);
+
+    printf("Area_em_km: %e" , Area_em_km); 
+
+    printf("PIB: %e" , PIB);
+
+    printf("Pontos_turisticos: %d" , Pontos_turisticos);
 
 
 
