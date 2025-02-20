@@ -8,57 +8,61 @@
 
 int main(){ 
     printf("Desafio Cartas Super Trunfo!\n");
-    printf("Novo Commit\n");
-    printf("novo commit\n");
+    //printf("Novo Commit\n");
+    //printf("novo commit\n");
     
-    char Estado; 
-    char codigo[32] = "A01";
-    char Cidade[100];   
-    int Populacao;
-    float Area_em_km;
-    float PIB;
-    int Pontos_turisticos;
+    char estado[3];       
+    char codigo[10];      
+    char cidade[100];    
+    int populacao;        
+    float area_km2;       
+    float pib;           
+    int pontos_turisticos;
 
-    printf("Estado: \n");
-    scanf("%s",&Estado);
+  
+    printf("Digite o estado (sigla): ");
+    scanf("%2s", estado);
 
-    printf("codigo: \n");
-    scanf("%c" , &codigo);
+    printf("Digite o código da cidade: ");
+    scanf("%s", codigo);
 
-    printf("Cidade: \n");
-    scanf("%s" , &Cidade);
+    
+    while (getchar() != '\n');
 
-    printf("Populacao: \n");
-    scanf("%f" , &Populacao);
+    printf("Digite o nome da cidade: ");
+    fgets(cidade, sizeof(cidade), stdin);
+    cidade[strcspn(cidade, "\n")] = 0;
+    
+    printf("Digite a populacao da cidade: ");
+    scanf("%d", &populacao);
 
-    printf("Area_em_km: \n");
-    scanf("%e" , &Area_em_km);
+    printf("Digite a área da cidade em km²: ");
+    scanf("%f", &area_km2);
 
-    printf("PIB: \n");
-    scanf("%c" , &PIB);
+    printf("Digite o PIB da cidade: ");
+    scanf("%f", &pib);
 
-    printf("Pontos_turisticos: \n");
-    scanf("%d" , &Pontos_turisticos);
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &pontos_turisticos);
 
-    printf("Poder Da Carta ");
+    
+    printf("\n===== Carta Super Trunfo Cadastrada =====\n");
 
-    printf("Estado: %s" , Estado);
+    printf("Estado: %s\n", estado);
 
-    printf("codigo: %e", codigo);
+    printf("Código: %s\n", codigo);
 
-    printf("Cidade: %s" , Cidade);
+    printf("Cidade: %s\n", cidade);
 
-    printf("Populacao: %f" , Populacao);
+    printf("População: %d habitantes\n", populacao);
 
-    printf("Area_em_km: %e" , Area_em_km); 
+    printf("Área: %.2f km²\n", area_km2);
 
-    printf("PIB: %e" , PIB);
+    printf("PIB: R$ %.2f bilhões\n", pib);
 
-    printf("Pontos_turisticos: %d" , Pontos_turisticos);
+    printf("Pontos Turísticos: %d\n", pontos_turisticos);
 
-
-
-
+    printf("=========================================\n");
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
