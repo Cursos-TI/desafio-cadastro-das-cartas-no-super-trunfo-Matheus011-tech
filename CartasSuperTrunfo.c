@@ -18,6 +18,9 @@ int main(){
     float area_km2;       
     float pib;           
     int pontos_turisticos;
+    float area_da_cidade;
+    float Densidade_Populacional = populacao / area_da_cidade;
+    float pib_per_capita = pib / populacao;
 
   
     printf("Digite o estado (sigla): ");
@@ -61,6 +64,10 @@ int main(){
     printf("PIB: R$ %.2f bilhões\n", pib);
 
     printf("Pontos Turísticos: %d\n", pontos_turisticos);
+
+    printf("Densidade Populacional: %.2f\n", Densidade_Populacional);
+
+    printf("Pib Per Capita: %.2f\n", pib_per_capita);
 
     printf("=========================================\n");
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
