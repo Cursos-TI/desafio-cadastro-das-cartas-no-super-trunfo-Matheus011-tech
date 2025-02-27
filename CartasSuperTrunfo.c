@@ -65,9 +65,9 @@ int main(){
 
     printf("Pontos Turísticos: %d\n", pontos_turisticos);
 
-    printf("Densidade Populacional: %.2f\n", Densidade_Populacional);
+    printf("Densidade Populacional: %.2f\n", populacao / area_da_cidade);
 
-    printf("Pib Per Capita: %.2f\n", pib_per_capita);
+          printf("Pib Per Capita: %.2f\n", pib / populacao);
 
     printf("=========================================\n");
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
